@@ -218,7 +218,7 @@ function Footer() {
                   <br />
                   <span>Mobile : +880167-97622-06</span>
                   <br />
-                  <span>Email : kachabazar@gmail.com</span>
+                  <span>Email : tazabazar@gmail.com</span>
                 </p>
               </div>
             </div>
@@ -402,8 +402,8 @@ function Footer() {
           </div>
           <div className='mx-auto max-w-screen-2xl px-3 sm:px-10 flex justify-center py-4'>
             <p className='text-sm text-gray-500 leading-6'>
-              Copyright 2022 @
-              <span className='text-emerald-500'>KachaBazar</span>, All rights
+              Copyright 2025 @
+              <span className='text-emerald-500'>TazaBazar</span>, All rights
               reserved.
             </p>
           </div>
