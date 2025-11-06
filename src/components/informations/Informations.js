@@ -1,5 +1,3 @@
-import React from "react";
-
 function Informations() {
   return (
     <div className="w-full xl:w-5/12 lg:w-6/12 md:w-5/12">
@@ -31,7 +29,6 @@ function Informations() {
           </li>
           <li className="flex items-center py-3">
             <span className="text-xl text-gray-400 items-start mr-4">
-                
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -164,8 +161,7 @@ function Informations() {
               </svg>
             </span>
             <p className="font-sans leading-5 text-sm text-gray-500">
-              Delivery from our pick point Cecilia Chapman, 561-4535 Nulla LA,
-              United States 96522
+              House-41, Road-05, Sataish, Tongi, Gazipur-1712.
             </p>
           </li>
         </ul>
