@@ -109,7 +109,7 @@ function Navigation() {
                               <div className="rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-y-scroll scrollbar flex-grow w-full h-[400px]">
                                 <div className="flex flex-col w-full h-full bg-white cursor-pointer scrollbar-hide">
                                   <div className="w-full max-h-full">
-                                    <div className="relative grid gap-2 p-6">
+                                    {/* <div className="relative grid gap-2 p-6">
                                       {CategoriesData.map((category, index) => (
                                         <span
                                           key={index}
@@ -175,6 +175,62 @@ function Navigation() {
                                             </span>
                                           </div>
                                         </span>
+                                      ))}
+                                    </div> */}
+                                    <div className="w-40">
+                                      {CategoriesData.map((category, index) => (
+                                        <div
+                                          key={index}
+                                          className="group relative"
+                                        >
+                                          {/* Main Category */}
+                                          <span className="p-2 flex items-center rounded-md hover:bg-gray-50 w-full hover:text-emerald-600 cursor-pointer">
+                                            <img
+                                              src={category.icon}
+                                              alt={category.name}
+                                              className="w-5 h-5"
+                                            />
+                                            <div className="ml-3 inline-flex items-center justify-between w-full">
+                                              {category.name}
+                                              <span className="text-gray-400 group-hover:text-emerald-600 transition">
+                                                <svg
+                                                  stroke="currentColor"
+                                                  fill="currentColor"
+                                                  strokeWidth="0"
+                                                  viewBox="0 0 512 512"
+                                                  height="1em"
+                                                  width="1em"
+                                                  xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                  <path
+                                                    fill="none"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                    strokeWidth="48"
+                                                    d="M184 112l144 144-144 144"
+                                                  ></path>
+                                                </svg>
+                                              </span>
+                                            </div>
+                                          </span>
+
+                                          {/* Subcategories Dropdown */}
+                                          {category.subCategories && (
+                                            <div className="absolute left-full top-0 hidden group-hover:block bg-white shadow-lg rounded-md w-48 z-50">
+                                              {category.subCategories.map(
+                                                (sub, subIndex) => (
+                                                  <Link
+                                                    key={subIndex}
+                                                    to={`/search?Category=${sub.path}`}
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-emerald-50 hover:text-emerald-600"
+                                                  >
+                                                    {sub.name}
+                                                  </Link>
+                                                )
+                                              )}
+                                            </div>
+                                          )}
+                                        </div>
                                       ))}
                                     </div>
                                   </div>
